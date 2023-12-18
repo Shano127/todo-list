@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(assests/27530.png) no-repeat center;
+    
+}
+
+.form-control{
+    display: flex;
+}
+
+.form-control input{
+    flex: 1;
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid #858585;
+}
+
+.form-control button{
+    background-color: #76df76;
+    border: 0px;
+}
+
+.form-control button:hover{
+    background-color: #76df76;
+}
+
+.date-hour{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem 1.5rem 1rem;
+    font-size: 16px;
+    color: #102f5c;
+}
+
+
+#date{
+    flex: 1;
+}
+
+button{
+    background-color: darkorange;
+    color: #102f5c;
+    border: 2px solid #102f5c;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border: 1px solid #f5880c;
+}
+
+button:hover{
+    background-color: orangered;
+    color: white;
+}
+
+button > i{
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input{
+    padding: 0.4rem 0.5rem;
+}
+
+.hide{
+    display: none;
+}
+
+.todo-container{
+    background-color: #ecf0f1;
+    width: 450px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    border-radius: 30px;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+    10px 10px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(255,255,255,0.2),
+    inset -5px -5px 15px rgba(0,0,0,0.75);
+
+}
+
+.todo-container header{
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+header > h1{
+    padding-left: 16px;
+    border-left: 5px solid #e74c3c;
+}
+
+#todo-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo-form > p, #edit-form > p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+
+.form-control > input{
+    margin-right: 0.8rem;
+}
+
+
+#cancel-edit-btn{
+    margin-top: 1rem;
+}
+
+
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3rem 0.2rem;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+
+.todo h3{
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+
+.todo button{
+    margin-left: 0.4rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #ecf0f1;
+}
+
+
+.done{
+    background-color: green;
+}
+
+.done h3{
+    color: white;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+
+.done button:hover, .done button{
+    background-color: #395169;
+    color: #ecf0f1;
+}
+
+
+.done > button:hover{
+    background-color: green;
+}
+
+
+.todo-list{
+    max-width: 450px;
+    overflow: auto;
+}

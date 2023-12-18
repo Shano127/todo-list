@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO list</title>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="todo.js" defer></script>
+</head>
+<body onload="time()">
+    <div class="todo-container">
+        <div class="date-hour">
+            <p id="date">Date</p>
+            <p id="hour">Hour</p>
+        </div>
+        <header>
+            <h1>TO DO List</h1>
+        </header>
+        
+        <form action="" id="todo-form">
+            <p>Add your tasks here</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="Type here about your next task">
+                <button type="submit">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </form>
+
+
+        <form action="" id="edit-form" class="hide">
+            <p>Edit your tasks</p>
+            <div class="form-control">
+                <input type="text" id="edit-input" placeholder="Type about your next task">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button type="button" class="cancel-edit-btn">Cancel</button>
+        </form>
+    
+        
+        <!-- task lists -->
+
+        <div class="todo-list" id="todo-list">
+            <div class="todo">
+                <h3>Some default task</h3>
+
+                <button class="finish-todo">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+
+                <button class="edit-todo">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+
+                <button class="remove-todo">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+            </div>
+        </div>
+
+    
+    </div>
+</body>
+</html>
